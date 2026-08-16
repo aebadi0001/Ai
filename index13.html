@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>هدر نهایی | مهدی عبادی</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800;900&display=swap');
+
+:root{
+  --bg:#f6f2ea;
+  --text:#16161a;
+  --muted:#6f6a5e;
+  --border:rgba(22,22,26,.1);
+
+  --accent:#a8853f;
+  --accent-soft:rgba(168,133,63,.14);
+  --accent-glow:rgba(168,133,63,.35);
+  --on-accent:#ffffff;
+
+  --surface:rgba(255,255,255,.75);
+  --header-glass:rgba(255,255,255,.30);
+  --header-glass-strong:rgba(255,255,255,.78);
+
+  --shadow:0 18px 50px rgba(31,25,16,.08);
+  --hero-bg:linear-gradient(180deg,#f7f2e9,#efe6d6);
+
+  /* گلس رنگی (accent) — روز */
+  --icon-bg:linear-gradient(180deg,rgba(255,255,255,.30),rgba(168,133,63,.12));
+  --icon-border:rgba(168,133,63,.35);
+  --icon-highlight:rgba(255,255,255,.65);
+  --icon-shadow:0 8px 24px rgba(31,25,16,.12);
+  
+  /* پس‌زمینه کپسول‌ها — روز */
+  --capsule-idle:rgba(255,255,255,.45);       /* کپسول قبل از اسکرول (روی هیرو) */
+  --capsule-solid:rgba(255,255,255,.72);      /* کپسول بعد از اسکرول */
+  --capsule-nav:rgba(255,255,255,.74);        /* ناوبری پایین موبایل */
+  --capsule-blur-idle:14px;
+  --capsule-blur-solid:24px;
+}
+
+body.night{
+  --bg:#07080c;
+  --text:#f0eade;
+  --muted:#9b9488;
+  --border:rgba(240,234,222,.12);
+
+  --accent:#c8a95d;
+  --accent-soft:rgba(200,169,93,.16);
+  --accent-glow:rgba(200,169,93,.35);
+  --on-accent:#14100a;
+
+  --surface:rgba(13,15,21,.75);
+  --header-glass:rgba(13,15,21,.30);
+  --header-glass-strong:rgba(13,15,21,.78);
+
+  --shadow:0 18px 50px rgba(0,0,0,.35);
+  --hero-bg:linear-gradient(180deg,#07080c,#0c0d12);
+
+  /* گلس رنگی (accent) — شب */
+  --icon-bg:linear-gradient(180deg,rgba(24,30,42,.45),rgba(200,169,93,.10));
+  --icon-border:rgba(200,169,93,.30);
+  --icon-highlight:#2a3446;
+  --icon-shadow:0 8px 24px rgba(0,0,0,.45);
+  
+  /* پس‌زمینه کپسول‌ها — شب (بدون سفید) */
+  --capsule-idle:rgba(13,15,21,.55);
+  --capsule-solid:rgba(13,15,21,.82);
+  --capsule-nav:rgba(13,15,21,.80);
+  --capsule-blur-idle:14px;
+  --capsule-blur-solid:24px;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Vazirmatn',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  transition:background .35s ease,color .35s ease;
+}
+
+.svg-defs{
+  display:none;
+}
+
+/* ---------------- Header shared ---------------- */
+
+.brand{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:var(--text);
+  font-weight:900;
+  white-space:nowrap;
+}
+
+.brand .logo{
+  width:40px;
+  height:40px;
+  border-radius:14px;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(135deg,var(--accent),transparent);
+  color:var(--on-accent);
+  font-size:.9rem;
+  font-weight:900;
+}
+
+.brand-text{
+  font-size:1rem;
+}
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  list-style:none;
+  margin-inline:auto;
+}
+
+.nav-links a{
+  display:inline-flex;
+  align-items:center;
+  padding:10px 12px;
+  border-radius:12px;
+  text-decoration:none;
+  color:var(--text);
+  transition:background-color .2s ease,color .2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+  color:var(--accent);
+  background:var(--accent-soft);
+}
+
+.nav-links a.active{
+  font-weight:700;
+}
+
+.actions{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+/* ---------------- دکمه آیکونی گلس رنگی ---------------- */
+
+.icon-btn{
+  width:44px;
+  height:44px;
+  border-radius:16px;
+  border:1px solid var(--icon-border);
+  color:var(--text);
+  display:grid;
+  place-items:center;
+  cursor:pointer;
+  transition:all .25s ease;
+
+  background:var(--icon-bg);
+  -webkit-backdrop-filter:blur(14px);
+  backdrop-filter:blur(14px);
+
+  box-shadow:
+    inset 0 1px 0 var(--icon-highlight),
+    var(--icon-shadow);
+}
+
+.icon-btn:hover{
+  background:linear-gradient(180deg,#d4b876,#c8a95d);
+  color:var(--on-accent);
+  border-color:var(--accent);
+
+  box-shadow:
+    inset 0 1px 0 #e6cf9a,
+    inset 0 -1px 0 rgba(20,16,10,.25),
+    0 0 22px var(--accent-glow),
+    0 10px 22px rgba(0,0,0,.28);
+}
+
+.icon-btn:active{
+  background:linear-gradient(180deg,#c8a95d,#a8853f);
+  color:var(--on-accent);
+  border-color:var(--accent);
+
+  box-shadow:
+    inset 0 2px 8px rgba(20,16,10,.35),
+    0 0 16px var(--accent-glow);
+}
+
+.icon-btn:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:3px;
+}
+
+.icon-btn svg{
+  width:19px;
+  height:19px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.theme-toggle svg{
+  grid-area:1/1;
+}
+
+.theme-toggle .moon{
+  display:none;
+}
+
+body.night .theme-toggle .sun{
+  display:none;
+}
+
+body.night .theme-toggle .moon{
+  display:block;
+}
+
+/* ---------------- Desktop header ---------------- */
+
+.d-header{
+  position:fixed;
+  top:16px;
+  inset-inline:0;
+  z-index:1000;
+  padding:0 16px;
+}
+
+.d-bar{
+  max-width:1180px;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:18px;
+  padding:12px 18px;
+  border-radius:999px;
+  border:1px solid transparent;
+  -webkit-backdrop-filter:blur(var(--capsule-blur-idle)) saturate(1.1);
+  backdrop-filter:blur(var(--capsule-blur-idle)) saturate(1.1);
+  transition:.35s ease;
+}
+
+.d-header.scrolled .d-bar{
+  border-color:var(--border);
+  background:var(--capsule-solid);
+  box-shadow:var(--shadow);
+  -webkit-backdrop-filter:blur(var(--capsule-blur-solid)) saturate(1.2);
+  backdrop-filter:blur(var(--capsule-blur-solid)) saturate(1.2);
+}
+
+/* ---------------- Mobile top header ---------------- */
+
+.m-top{
+  position:fixed;
+  top:0;
+  inset-inline:0;
+  z-index:1000;
+  display:none;
+  border-bottom:1px solid transparent;
+  -webkit-backdrop-filter:blur(var(--capsule-blur-idle)) saturate(1.1);
+  backdrop-filter:blur(var(--capsule-blur-idle)) saturate(1.1);
+  transition:.35s ease;
+}
+
+.m-bar{
+  max-width:1180px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:12px 16px;
+}
+
+.m-top.scrolled{
+  background:var(--capsule-solid);
+  border-bottom-color:var(--border);
+  -webkit-backdrop-filter:blur(var(--capsule-blur-solid)) saturate(1.2);
+  backdrop-filter:blur(var(--capsule-blur-solid)) saturate(1.2);
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.m-top .icon-btn{
+  width:40px;
+  height:40px;
+  border-radius:14px;
+}
+
+/* ---------------- Mobile bottom navigation ---------------- */
+
+.bottom-nav{
+  position:fixed;
+  bottom:14px;
+  inset-inline:0;
+  z-index:1000;
+  display:none;
+  padding:0 14px;
+}
+
+.bottom-bar{
+  max-width:430px;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  gap:6px;
+  padding:8px;
+  border-radius:999px;
+  background:var(--capsule-nav);
+  border:1px solid var(--border);
+  -webkit-backdrop-filter:blur(var(--capsule-blur-solid)) saturate(1.2);
+  backdrop-filter:blur(var(--capsule-blur-solid)) saturate(1.2);
+  box-shadow:var(--shadow);
+}
+
+.bottom-link{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:4px;
+  text-decoration:none;
+  color:var(--muted);
+  font-size:.68rem;
+  font-weight:700;
+  padding:8px 10px;
+  border-radius:16px;
+  transition:background-color .25s ease,color .25s ease;
+}
+
+.bottom-link svg{
+  width:20px;
+  height:20px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.bottom-link:hover,
+.bottom-link.active{
+  color:var(--accent);
+  background:var(--accent-soft);
+}
+
+/* ---------------- Hero ---------------- */
+
+.hero{
+  min-height:170vh;
+  padding:150px 24px 120px;
+  background:var(--hero-bg);
+  transition:background .35s ease;
+}
+
+.hero-inner{
+  max-width:1180px;
+  margin:0 auto;
+}
+
+.badge{
+  display:inline-flex;
+  padding:8px 13px;
+  border-radius:999px;
+  background:var(--accent-soft);
+  color:var(--accent);
+  font-size:.8rem;
+  font-weight:800;
+}
+
+.hero h1{
+  font-size:clamp(2.4rem,6vw,5rem);
+  line-height:1.1;
+  font-weight:900;
+  margin:16px 0 12px;
+}
+
+.hero p{
+  max-width:680px;
+  color:var(--muted);
+  line-height:2.1;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+  margin-top:46px;
+}
+
+.card{
+  height:230px;
+  border-radius:28px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media(max-width:960px){
+  .d-header{
+    display:none;
+  }
+
+  .m-top{
+    display:block;
+  }
+
+  .bottom-nav{
+    display:block;
+  }
+
+  .hero{
+    padding-top:110px;
+    padding-bottom:150px;
+  }
+}
+
+@media(min-width:961px){
+  .m-top,
+  .bottom-nav{
+    display:none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<svg class="svg-defs" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="icon-search" viewBox="0 0 24 24">
+    <circle cx="11" cy="11" r="7"></circle>
+    <path d="M20 20l-3.5-3.5"></path>
+  </symbol>
+
+  <symbol id="icon-sun" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="4"></circle>
+    <path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+  </symbol>
+
+  <symbol id="icon-moon" viewBox="0 0 24 24">
+    <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>
+  </symbol>
+
+  <symbol id="icon-settings" viewBox="0 0 24 24">
+    <path d="M4 7h9.5M18.5 7H20M4 12h3.5M12.5 12H20M4 17h9.5M18.5 17H20"></path>
+    <circle cx="16" cy="7" r="2"></circle>
+    <circle cx="10" cy="12" r="2"></circle>
+    <circle cx="16" cy="17" r="2"></circle>
+  </symbol>
+
+  <symbol id="icon-download" viewBox="0 0 24 24">
+    <path d="M12 4v10m0 0 4-4m-4 4-4-4M5 18h14"></path>
+  </symbol>
+
+  <symbol id="icon-home" viewBox="0 0 24 24">
+    <path d="M4 11.5 12 4l8 7.5"></path>
+    <path d="M7 10v8h10v-8"></path>
+  </symbol>
+
+  <symbol id="icon-music" viewBox="0 0 24 24">
+    <path d="M9 18V6l10-2v11"></path>
+    <circle cx="6.5" cy="18" r="2.5"></circle>
+    <circle cx="16.5" cy="15" r="2.5"></circle>
+  </symbol>
+
+  <symbol id="icon-image" viewBox="0 0 24 24">
+    <rect x="4" y="5" width="16" height="14" rx="3"></rect>
+    <circle cx="9" cy="10" r="1.5"></circle>
+    <path d="M5 17l4.5-4.5L14 17l2.5-2.5L19 17"></path>
+  </symbol>
+
+  <symbol id="icon-blog" viewBox="0 0 24 24">
+    <path d="M7 4h8l4 4v12H7z"></path>
+    <path d="M15 4v4h4"></path>
+    <path d="M10 12h6M10 16h6"></path>
+  </symbol>
+
+  <symbol id="icon-phone" viewBox="0 0 24 24">
+    <path d="M6 4h3l1.5 4L8 9.5A12 12 0 0 0 14.5 16l1.5-2.5 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 4 6a2 2 0 0 1 2-2Z"></path>
+  </symbol>
+</svg>
+
+<!-- Desktop Header -->
+<header class="d-header header">
+  <div class="d-bar">
+    <a class="brand" href="#">
+      <span class="logo">م</span>
+      <span class="brand-text">مهدی عبادی</span>
+    </a>
+
+    <nav aria-label="منوی اصلی">
+      <ul class="nav-links">
+        <li><a href="#" class="active">خانه</a></li>
+        <li><a href="#">موسیقی</a></li>
+        <li><a href="#">گالری</a></li>
+        <li><a href="#">بلاگ</a></li>
+        <li><a href="#">درباره</a></li>
+        <li><a href="#">تماس</a></li>
+      </ul>
+    </nav>
+
+    <div class="actions">
+      <button class="icon-btn" aria-label="جستجو">
+        <svg><use href="#icon-search"></use></svg>
+      </button>
+
+      <button class="icon-btn theme-toggle" aria-label="تغییر حالت شب و روز">
+        <svg class="sun"><use href="#icon-sun"></use></svg>
+        <svg class="moon"><use href="#icon-moon"></use></svg>
+      </button>
+
+      <button class="icon-btn" aria-label="تنظیمات">
+        <svg><use href="#icon-settings"></use></svg>
+      </button>
+
+      <button class="icon-btn" aria-label="دانلود رزومه">
+        <svg><use href="#icon-download"></use></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Top Header -->
+<header class="m-top header">
+  <div class="m-bar">
+    <a class="brand" href="#">
+      <span class="logo">م</span>
+      <span class="brand-text">مهدی عبادی</span>
+    </a>
+
+    <div class="actions">
+      <button class="icon-btn" aria-label="جستجو">
+        <svg><use href="#icon-search"></use></svg>
+      </button>
+
+      <button class="icon-btn theme-toggle" aria-label="تغییر حالت شب و روز">
+        <svg class="sun"><use href="#icon-sun"></use></svg>
+        <svg class="moon"><use href="#icon-moon"></use></svg>
+      </button>
+
+      <button class="icon-btn" aria-label="تنظیمات">
+        <svg><use href="#icon-settings"></use></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="badge">هدر نهایی</span>
+      <h1>مهدی عبادی</h1>
+      <p>
+        این یک هیروی تستی است برای بررسی رفتار هدر. در حالت اولیه، هدر موبایل با هیرو ترکیب شده و بعد از اسکرول، یک خط جداکننده و پس‌زمینه شیشه‌ای ظاهر می‌شود.
+      </p>
+
+      <div class="cards">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Mobile Bottom Navigation -->
+<nav class="bottom-nav" aria-label="منوی پایین موبایل">
+  <div class="bottom-bar">
+    <a href="#" class="bottom-link active">
+      <svg><use href="#icon-home"></use></svg>
+      <span>خانه</span>
+    </a>
+
+    <a href="#" class="bottom-link">
+      <svg><use href="#icon-music"></use></svg>
+      <span>موسیقی</span>
+    </a>
+
+    <a href="#" class="bottom-link">
+      <svg><use href="#icon-image"></use></svg>
+      <span>گالری</span>
+    </a>
+
+    <a href="#" class="bottom-link">
+      <svg><use href="#icon-blog"></use></svg>
+      <span>بلاگ</span>
+    </a>
+
+    <a href="#" class="bottom-link">
+      <svg><use href="#icon-phone"></use></svg>
+      <span>تماس</span>
+    </a>
+  </div>
+</nav>
+
+<script>
+// Scroll state for headers
+function updateHeaderState(){
+  const scrolled = window.scrollY > 10;
+  document.querySelectorAll('.header').forEach(header => {
+    header.classList.toggle('scrolled', scrolled);
+  });
+}
+
+window.addEventListener('scroll', updateHeaderState);
+updateHeaderState();
+
+// Theme toggle
+document.addEventListener('click', (e) => {
+  const themeToggle = e.target.closest('.theme-toggle');
+  if(themeToggle){
+    document.body.classList.toggle('night');
+  }
+});
+
+// Desktop menu active state
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.querySelectorAll('.nav-links a').forEach(item => item.classList.remove('active'));
+    link.classList.add('active');
+  });
+});
+
+// Mobile bottom nav active state
+document.querySelectorAll('.bottom-link').forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.querySelectorAll('.bottom-link').forEach(item => item.classList.remove('active'));
+    link.classList.add('active');
+  });
+});
+</script>
+
+</body>
+</html>
