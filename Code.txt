@@ -1,0 +1,323 @@
+HTML
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="وب‌سایت شخصی مهدی عبادی؛ معرفی، فعالیت‌های کاری، پرورش مرغ عشق، خرید و فروش گونی، تجربیات و علایق.">
+  <meta name="color-scheme" content="dark light">
+  <title>مهدی عبادی | وب‌سایت شخصی</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="theme-modern surface-glass mode-dark" data-theme="modern">
+  <div class="site-noise" aria-hidden="true"></div>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="ambient ambient-c" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-shell">
+      <a class="brand" href="#home" aria-label="مهدی عبادی، خانه">
+        <span class="brand-mark">م</span>
+        <span class="brand-copy"><strong>مهدی عبادی</strong><small>Personal space</small></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="ناوبری اصلی">
+        <a href="#home" class="nav-link active">خانه</a>
+        <a href="#about" class="nav-link">درباره من</a>
+        <a href="#activities" class="nav-link">فعالیت‌ها</a>
+        <a href="#journey" class="nav-link">مسیر</a>
+        <a href="#gallery" class="nav-link">گالری</a>
+        <a href="#music" class="nav-link">موسیقی</a>
+        <a href="#blog" class="nav-link">یادداشت‌ها</a>
+        <a href="#contact" class="nav-link">ارتباط</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-button" id="theme-open" type="button" aria-label="باز کردن تنظیمات ظاهر" title="تنظیمات ظاهر">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v2m0 14v2M5.64 5.64l1.42 1.42m9.9 9.9 1.4 1.4M3 12h2m14 0h2M5.64 18.36l1.42-1.42m9.9-9.9 1.4-1.4M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/></svg>
+        </button>
+        <a class="btn btn-primary nav-cta" href="#contact">ارتباط با من <span>↗</span></a>
+        <button class="menu-toggle" id="mobile-open" type="button" aria-label="باز کردن منوی موبایل" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="scroll-progress"><span id="scroll-progress"></span></div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse-dot"></span> وب‌سایت شخصی مهدی عبادی</div>
+          <h1>من <span class="gradient-text">مهدی عبادی</span> هستم؛<br><em>در حال ساختن مسیر خودم.</em></h1>
+          <p class="hero-lead">فارغ‌التحصیل مدیریت بازرگانی، فعال در خرید و فروش عمده گونی مواد غذایی، پرورش و فروش مرغ عشق و دارای تجربه کار در محیط صنعتی. اینجا قرار است تصویری واقعی از مسیر، تجربه‌ها و علایق من باشد.</p>
+          <div class="hero-actions">
+            <a href="#activities" class="btn btn-primary">مسیر و فعالیت‌ها <span>↓</span></a>
+            <a href="#about" class="btn btn-ghost">بیشتر درباره من <span>↘</span></a>
+          </div>
+          <div class="hero-meta">
+            <span><i></i> اهواز → قم</span>
+            <span><i></i> متولد ۱۸ تیر ۱۳۸۳</span>
+            <span><i></i> کارشناسی مدیریت بازرگانی</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay">
+          <div class="visual-orbit orbit-a"></div>
+          <div class="visual-orbit orbit-b"></div>
+          <div class="profile-card glass-card tilt" data-tilt>
+            <div class="card-glow"></div>
+            <div class="profile-media" id="profile-media">
+              <div class="profile-placeholder">
+                <span class="monogram">م</span>
+                <small>عکس پروفایل را در<br><b>assets/images/profile.webp</b><br>قرار بده</small>
+              </div>
+            </div>
+            <div class="profile-info">
+              <div><span class="mini-label">نام</span><strong>مهدی عبادی</strong></div>
+              <div><span class="mini-label">زمینه</span><strong>مدیریت، فروش، پرورش</strong></div>
+            </div>
+            <div class="floating-badge badge-one">01 <span>هدف: رشد</span></div>
+            <div class="floating-badge badge-two">04 <span>علاقه: تجربه</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span></span><small>اسکرول کن</small></div>
+    </section>
+
+    <section class="section intro-strip" id="about">
+      <div class="container">
+        <div class="section-kicker reveal">01 / درباره من</div>
+        <div class="about-grid">
+          <div class="section-heading reveal"><h2>این سایت قرار نیست فقط یک رزومه باشد.</h2></div>
+          <div class="about-copy reveal">
+            <p>این صفحه یک دفترچه دیجیتال از مسیر من است؛ از تحصیل در مدیریت بازرگانی و تجربه‌های روزمره کاری تا فعالیت مستقل در خرید و فروش گونی و علاقه جدی به پرورش و فروش مرغ عشق.</p>
+            <p>فعلاً مسیرم چند شاخه است، اما نقطه مشترک همه آن‌ها یادگیری، کار واقعی و ساختن منبع درآمد مستقل است. در آینده هر بخش می‌تواند به یک صفحه کامل و تخصصی تبدیل شود.</p>
+            <div class="fact-row">
+              <div class="fact"><span>متولد</span><strong>اهواز</strong></div>
+              <div class="fact"><span>محل فعالیت</span><strong>قم، شکوهیه</strong></div>
+              <div class="fact"><span>تحصیلات</span><strong>مدیریت بازرگانی</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="activities">
+      <div class="container">
+        <div class="section-top reveal"><div><span class="section-kicker">02 / فعالیت‌ها</span><h2>سه مسیر، یک داستان.</h2></div><p>هر کارت نماینده بخشی واقعی از مسیر فعلی من است و بعداً می‌تواند مستقل و تخصصی‌تر شود.</p></div>
+        <div class="activity-grid">
+          <article class="activity-card feature reveal tilt" data-tilt>
+            <div class="card-index">01</div><div class="activity-icon icon-goni">▰</div>
+            <div class="activity-content"><span class="activity-tag">درآمد مستقل</span><h3>خرید و فروش گونی مواد غذایی</h3><p>خرید و فروش عمده گونی‌های مورد استفاده برای مواد غذایی؛ فعالیتی شخصی که برای ساختن یک منبع درآمد مستقل راه افتاده است.</p><a href="#contact" class="text-link">درباره همکاری ↗</a></div>
+            <div class="activity-art art-goni"><span></span><span></span><span></span></div>
+          </article>
+          <article class="activity-card reveal tilt" data-tilt>
+            <div class="card-index">02</div><div class="activity-icon icon-bird">◌</div>
+            <div class="activity-content"><span class="activity-tag">علاقه + کسب‌وکار</span><h3>پرورش و فروش مرغ عشق</h3><p>پرورش، نگهداری و فروش مرغ عشق در رنگ‌ها و نژادهای مختلف؛ حوزه‌ای که قرار است به مرور گسترده‌تر شود.</p><a href="#gallery" class="text-link">دیدن گالری ↗</a></div>
+          </article>
+          <article class="activity-card reveal tilt" data-tilt>
+            <div class="card-index">03</div><div class="activity-icon icon-work">＋</div>
+            <div class="activity-content"><span class="activity-tag">سابقه ۲ سال</span><h3>تجربه کار در شکوهیه قم</h3><p>کارگر ساده در شرکتی واقع در شهرک شکوهیه قم؛ فعالیت در محیط مربوط به روغن‌گیری کنجد و در برخی مواقع ذرت و بادم.</p><a href="#journey" class="text-link">مسیر کاری ↗</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="journey">
+      <div class="container">
+        <div class="section-top reveal"><div><span class="section-kicker">03 / مسیر</span><h2>مسیر حرفه‌ای من، هنوز در حال شکل‌گیری است.</h2></div><p>به‌جای بزرگ‌نمایی، اینجا فقط اتفاق‌هایی را می‌بینی که واقعاً بخشی از زندگی کاری من هستند.</p></div>
+        <div class="timeline">
+          <div class="timeline-line"><span></span></div>
+          <article class="timeline-item reveal"><span class="timeline-dot"></span><div class="timeline-year">۱۳۸۳</div><div class="timeline-card glass-card"><small>آغاز</small><h3>تولد در اهواز</h3><p>شروع زندگی در اهواز؛ ۱۸ تیر ۱۳۸۳.</p></div></article>
+          <article class="timeline-item reveal"><span class="timeline-dot"></span><div class="timeline-year">تحصیل</div><div class="timeline-card glass-card"><small>دانشگاه</small><h3>کارشناسی مدیریت بازرگانی</h3><p>تحصیل در رشته‌ای که به فروش، مدیریت و نگاه کسب‌وکاری مسیر من شکل داد.</p></div></article>
+          <article class="timeline-item reveal"><span class="timeline-dot"></span><div class="timeline-year">۲ سال</div><div class="timeline-card glass-card"><small>تجربه کاری</small><h3>کار در شهرک شکوهیه قم</h3><p>تجربه کار در یک محیط واقعی تولیدی و صنعتی در کنار فعالیت‌های شخصی.</p></div></article>
+          <article class="timeline-item reveal"><span class="timeline-dot"></span><div class="timeline-year">امروز</div><div class="timeline-card glass-card"><small>ادامه مسیر</small><h3>ساختن چند جریان درآمدی</h3><p>توسعه خرید و فروش گونی، پرورش مرغ عشق و آماده بودن برای فرصت‌های جدید.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-top reveal"><div><span class="section-kicker">04 / توانمندی‌ها</span><h2>چیزهایی که در آن‌ها تجربه دارم.</h2></div><p>این فهرست قرار نیست ادعای تخصص در همه چیز باشد؛ فقط حوزه‌هایی است که با مسیر واقعی من ارتباط دارند.</p></div>
+        <div class="skill-layout">
+          <div class="skills-panel glass-card reveal">
+            <div class="skill-item"><div><span>فروش و مذاکره</span><strong>تجربه عملی</strong></div><div class="skill-bar"><span style="--w:82%"></span></div></div>
+            <div class="skill-item"><div><span>مدیریت و کسب‌وکار</span><strong>دانش دانشگاهی</strong></div><div class="skill-bar"><span style="--w:78%"></span></div></div>
+            <div class="skill-item"><div><span>پرورش مرغ عشق</span><strong>تجربه شخصی</strong></div><div class="skill-bar"><span style="--w:74%"></span></div></div>
+            <div class="skill-item"><div><span>کار عملی و محیط صنعتی</span><strong>۲ سال سابقه</strong></div><div class="skill-bar"><span style="--w:80%"></span></div></div>
+          </div>
+          <div class="interest-grid reveal">
+            <div class="mini-card"><span>01</span><b>یادگیری</b><p>از تجربه‌های واقعی و پروژه‌های کوچک شروع می‌کنم.</p></div>
+            <div class="mini-card"><span>02</span><b>فروش</b><p>ارتباط با مشتری و ساختن مسیر درآمدی برایم مهم است.</p></div>
+            <div class="mini-card"><span>03</span><b>پرورش</b><p>مرغ عشق برای من فقط یک علاقه نیست؛ ظرفیت رشد دارد.</p></div>
+            <div class="mini-card"><span>04</span><b>آینده</b><p>ساختن فعالیت‌های بیشتر، مرحله بعدی مسیر است.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-top reveal"><div><span class="section-kicker">05 / گالری</span><h2>چند قاب برای شروع.</h2></div><p>فعلاً این بخش آماده ورود عکس‌های واقعی توست؛ کافی است فایل‌ها را داخل پوشه تصاویر قرار بدهی.</p></div>
+        <div class="gallery-grid">
+          <button class="gallery-card large reveal gallery-trigger" data-image="assets/images/gallery-01.webp" data-caption="پرورش مرغ عشق" type="button"><div class="gallery-placeholder placeholder-bird"><span>01</span><strong>مرغ عشق</strong><small>گالری آماده برای عکس واقعی</small></div></button>
+          <button class="gallery-card reveal gallery-trigger" data-image="assets/images/gallery-02.webp" data-caption="فعالیت شخصی" type="button"><div class="gallery-placeholder placeholder-bag"><span>02</span><strong>فعالیت شخصی</strong><small>تصویر محصول / کار</small></div></button>
+          <button class="gallery-card reveal gallery-trigger" data-image="assets/images/gallery-03.webp" data-caption="تجربه کاری" type="button"><div class="gallery-placeholder placeholder-work"><span>03</span><strong>تجربه کاری</strong><small>محیط و ابزار کار</small></div></button>
+          <button class="gallery-card reveal gallery-trigger" data-image="assets/images/gallery-04.webp" data-caption="زندگی روزمره" type="button"><div class="gallery-placeholder placeholder-life"><span>04</span><strong>زندگی روزمره</strong><small>قاب‌های شخصی</small></div></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section music-section dark-section" id="music">
+      <div class="container music-layout">
+        <div class="section-heading reveal"><span class="section-kicker">06 / موسیقی</span><h2>چند آهنگ برای حال‌وهوای اینجا.</h2><p>فایل‌های موسیقی را بعداً داخل <code>assets/music/</code> قرار بده. پلیر زیر از چند Track پشتیبانی می‌کند و Track بعدی را هم مدیریت می‌کند.</p></div>
+        <div class="player-shell glass-card reveal">
+          <div class="player-top"><div><small>اکنون در حال پخش</small><h3 id="track-title">هنوز آهنگی اضافه نشده</h3><span id="track-artist">فایل‌های خودت را اضافه کن</span></div><div class="equalizer" id="equalizer"><i></i><i></i><i></i><i></i></div></div>
+          <div class="player-time"><span id="current-time">00:00</span><div class="progress-track"><input id="seek" type="range" min="0" max="100" value="0" aria-label="موقعیت آهنگ"><span id="seek-fill"></span></div><span id="duration">00:00</span></div>
+          <div class="player-controls"><button class="player-btn" id="prev-track" type="button" aria-label="آهنگ قبلی">↶</button><button class="player-btn play" id="play-track" type="button" aria-label="پخش">▶</button><button class="player-btn" id="next-track" type="button" aria-label="آهنگ بعدی">↷</button></div>
+          <div class="playlist" id="playlist"></div>
+          <audio id="audio" preload="metadata"></audio>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="blog">
+      <div class="container">
+        <div class="section-top reveal"><div><span class="section-kicker">07 / یادداشت‌ها</span><h2>یادداشت‌هایی از تجربه واقعی.</h2></div><p>در نسخه فعلی مقاله‌ها داخل همین صفحه باز می‌شوند؛ بعداً هرکدام می‌تواند به صفحه‌ای مستقل، خصوصی و کامل تبدیل شود.</p></div>
+        <div class="blog-grid">
+          <article class="blog-card reveal tilt" data-tilt><div class="blog-cover cover-goni"><span>گونی</span></div><div class="blog-body"><small>فعالیت شخصی</small><h3>شروع خرید و فروش عمده گونی مواد غذایی</h3><p>چطور یک فعالیت ساده می‌تواند تبدیل به یک مسیر درآمدی مستقل شود؟</p><button class="text-button post-open" data-post="post-goni" type="button">خواندن یادداشت ↗</button></div></article>
+          <article class="blog-card reveal tilt" data-tilt><div class="blog-cover cover-bird"><span>مرغ عشق</span></div><div class="blog-body"><small>تجربه شخصی</small><h3>چرا پرورش مرغ عشق برای من جذاب است؟</h3><p>از علاقه شخصی تا پرورش و فروش؛ مسیری که قابلیت توسعه دارد.</p><button class="text-button post-open" data-post="post-bird" type="button">خواندن یادداشت ↗</button></div></article>
+          <article class="blog-card reveal tilt" data-tilt><div class="blog-cover cover-work"><span>کار</span></div><div class="blog-body"><small>سابقه کاری</small><h3>دو سال کار در یک محیط واقعی صنعتی</h3><p>چیزهایی که کار عملی و روزمره به آدم یاد می‌دهد، جدا از عنوان شغلی.</p><button class="text-button post-open" data-post="post-work" type="button">خواندن یادداشت ↗</button></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal"><span class="section-kicker">08 / ارتباط</span><h2>اگر کاری برای گفت‌وگو، همکاری یا آشنایی داری، اینجا شروع کن.</h2><p>فعلاً سریع‌ترین راه‌ها تماس، WhatsApp و ایمیل هستند. لینک شبکه‌های اجتماعی را بعداً می‌توانی داخل فایل تنظیمات پروژه وارد کنی.</p><div class="contact-actions"><a class="contact-line" href="tel:+989357978773"><span class="line-icon">⌕</span><span><small>تماس</small><b dir="ltr">+98 935 797 8773</b></span></a><a class="contact-line" href="https://wa.me/989357978773" target="_blank" rel="noopener"><span class="line-icon">◉</span><span><small>WhatsApp</small><b>شروع گفت‌وگو</b></span></a><a class="contact-line" href="mailto:mahdiebadiasil@gmail.com"><span class="line-icon">@</span><span><small>ایمیل</small><b>mahdiebadiasil@gmail.com</b></span></a></div><a class="btn btn-ghost resume-btn" href="assets/docs/mehdi-ebadi-resume.pdf" download>دانلود رزومه <span>↓</span></a></div>
+        <form class="contact-form glass-card reveal" id="contact-form">
+          <div class="form-head"><span>پیام سریع</span><small>بدون Backend؛ با Mail Client سیستم ارسال می‌شود.</small></div>
+          <label>نام<input name="name" required placeholder="نام شما"></label>
+          <label>ایمیل<input name="email" type="email" placeholder="name@example.com"></label>
+          <label>پیام<textarea name="message" rows="5" required placeholder="در مورد چه چیزی می‌خواهید صحبت کنیم؟"></textarea></label>
+          <button class="btn btn-primary" type="submit">باز کردن ایمیل <span>↗</span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner"><div><strong>مهدی عبادی</strong><span>هر مسیر خوبی از یک قدم واقعی شروع می‌شود.</span></div><a href="#top">بازگشت به بالا ↑</a></div>
+  </footer>
+
+  <div class="theme-drawer" id="theme-drawer" aria-hidden="true">
+    <div class="drawer-backdrop" data-close-theme></div>
+    <aside class="drawer-panel" aria-label="تنظیمات ظاهر">
+      <div class="drawer-head"><div><span class="section-kicker">Theme Studio</span><h3>ظاهر سایت</h3></div><button class="icon-button" data-close-theme type="button" aria-label="بستن">×</button></div>
+      <div class="drawer-section"><span class="drawer-label">حالت</span><div class="option-grid two"><button class="option-btn" data-mode="dark">تاریک</button><button class="option-btn" data-mode="light">روشن</button></div></div>
+      <div class="drawer-section"><span class="drawer-label">استایل</span><div class="option-grid two"><button class="option-btn" data-theme="modern">مدرن</button><button class="option-btn" data-theme="classic">کلاسیک</button><button class="option-btn" data-theme="glass">شیشه‌ای</button><button class="option-btn" data-theme="minimal">ساده</button><button class="option-btn" data-theme="gradient">گرادینت</button></div></div>
+      <div class="drawer-section"><span class="drawer-label">رنگ</span><div class="swatches"><button class="swatch violet" data-accent="violet" aria-label="بنفش"></button><button class="swatch cyan" data-accent="cyan" aria-label="فیروزه‌ای"></button><button class="swatch orange" data-accent="orange" aria-label="نارنجی"></button><button class="swatch green" data-accent="green" aria-label="سبز"></button><button class="swatch rose" data-accent="rose" aria-label="رز"></button><button class="swatch yellow" data-accent="yellow" aria-label="زرد"></button></div></div>
+      <div class="drawer-section"><span class="drawer-label">سطح شیشه‌ای</span><div class="option-grid two"><button class="option-btn" data-surface="glass">Glass</button><button class="option-btn" data-surface="solid">Solid</button></div></div>
+      <button class="btn btn-ghost full" id="reset-theme" type="button">بازگردانی ظاهر پیش‌فرض</button>
+    </aside>
+  </div>
+
+  <div class="mobile-sheet" id="mobile-sheet" aria-hidden="true"><div class="drawer-backdrop" data-close-mobile></div><aside class="mobile-panel"><div class="drawer-head"><div><span class="section-kicker">Navigation</span><h3>مسیر صفحه</h3></div><button class="icon-button" data-close-mobile type="button" aria-label="بستن">×</button></div><nav class="mobile-nav" aria-label="ناوبری موبایل"><a href="#home">خانه</a><a href="#about">درباره من</a><a href="#activities">فعالیت‌ها</a><a href="#journey">مسیر</a><a href="#gallery">گالری</a><a href="#music">موسیقی</a><a href="#blog">یادداشت‌ها</a><a href="#contact">ارتباط</a></nav><a class="btn btn-primary full" href="#contact">ارتباط با من</a></aside></div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true"><div class="lightbox-backdrop" data-close-lightbox></div><div class="lightbox-card"><button class="icon-button" data-close-lightbox type="button" aria-label="بستن">×</button><div class="lightbox-media" id="lightbox-media"></div><div class="lightbox-caption" id="lightbox-caption"></div></div></div>
+
+  <div class="post-modal" id="post-modal" aria-hidden="true"><div class="lightbox-backdrop" data-close-post></div><article class="post-sheet"><button class="icon-button" data-close-post type="button" aria-label="بستن">×</button><span class="section-kicker">یادداشت</span><h2 id="post-title"></h2><div id="post-body"></div></article></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+CSS
+:root{--bg:#080b16;--bg2:#0e1324;--panel:rgba(255,255,255,.065);--panel-strong:rgba(255,255,255,.1);--text:#f4f6fb;--muted:#a4adc1;--line:rgba(255,255,255,.1);--accent:#8b5cf6;--accent2:#22d3ee;--accent-soft:rgba(139,92,246,.17);--shadow:0 30px 90px rgba(0,0,0,.34);--radius:26px;--ease:cubic-bezier(.2,.8,.2,1);font-family:'Vazirmatn',sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 15% 10%,rgba(139,92,246,.13),transparent 28%),radial-gradient(circle at 85% 20%,rgba(34,211,238,.09),transparent 24%),var(--bg);color:var(--text);overflow-x:hidden;transition:background .5s,color .4s}body.no-scroll{overflow:hidden}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}button{cursor:pointer}.container{width:min(1180px,calc(100% - 40px));margin-inline:auto}.section{padding:120px 0;position:relative}.dark-section{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.035));border-block:1px solid rgba(255,255,255,.05)}
+.site-noise{position:fixed;inset:0;pointer-events:none;opacity:.025;z-index:90;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E")}.ambient{position:fixed;filter:blur(70px);border-radius:50%;opacity:.34;pointer-events:none;z-index:-1}.ambient-a{width:260px;height:260px;background:#7c3aed;top:8%;left:-80px}.ambient-b{width:220px;height:220px;background:#06b6d4;top:50%;right:-100px}.ambient-c{width:180px;height:180px;background:#f59e0b;bottom:3%;left:30%;opacity:.15}
+.site-header{position:fixed;top:0;inset-inline:0;z-index:70;padding-top:16px;transition:.35s var(--ease)}.site-header.scrolled{padding-top:10px}.nav-shell{height:70px;border:1px solid var(--line);background:rgba(8,11,22,.55);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:22px;display:flex;align-items:center;justify-content:space-between;padding:0 12px 0 18px;box-shadow:0 12px 40px rgba(0,0,0,.15)}.brand{display:flex;gap:11px;align-items:center}.brand-mark{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;font-size:22px;font-weight:900;background:linear-gradient(135deg,var(--accent),var(--accent2));color:white;box-shadow:0 12px 30px var(--accent-soft)}.brand-copy{display:grid;line-height:1.1}.brand-copy strong{font-size:14px}.brand-copy small{font-size:9px;color:var(--muted);direction:ltr;text-align:right;margin-top:4px}.desktop-nav{display:flex;gap:5px;margin-inline:18px}.nav-link{font-size:12px;color:var(--muted);padding:11px 10px;border-radius:12px;transition:.25s}.nav-link:hover,.nav-link.active{color:var(--text);background:rgba(255,255,255,.06)}.nav-actions{display:flex;gap:8px;align-items:center}.icon-button,.menu-toggle{border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--text);width:42px;height:42px;border-radius:13px;display:grid;place-items:center;transition:.25s}.icon-button:hover{transform:translateY(-2px);background:rgba(255,255,255,.08)}.icon-button svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7}.btn{display:inline-flex;align-items:center;gap:9px;border-radius:14px;padding:13px 17px;font-size:12px;font-weight:800;border:1px solid transparent;transition:.28s var(--ease)}.btn:hover{transform:translateY(-3px)}.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;box-shadow:0 18px 35px var(--accent-soft)}.btn-ghost{background:rgba(255,255,255,.035);border-color:var(--line);color:var(--text)}.btn.full{width:100%;justify-content:center}.menu-toggle{display:none;gap:4px;padding:11px}.menu-toggle span{display:block;width:16px;height:2px;background:currentColor;border-radius:4px}.scroll-progress{position:absolute;left:0;right:0;bottom:-3px;height:3px;background:transparent}.scroll-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent2));box-shadow:0 0 18px var(--accent)}
+.hero{min-height:100svh;padding-top:160px;display:flex;align-items:center}.hero-grid{display:grid;grid-template-columns:1.06fr .94fr;align-items:center;gap:60px}.eyebrow,.section-kicker{font-size:11px;color:var(--muted);letter-spacing:.04em}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);padding:8px 11px;border-radius:999px;background:rgba(255,255,255,.035)}.pulse-dot{width:7px;height:7px;border-radius:50%;background:#34d399;box-shadow:0 0 0 6px rgba(52,211,153,.08);animation:pulse 2s infinite}.hero h1{font-size:clamp(46px,6vw,82px);line-height:1.08;margin:22px 0;font-weight:900;letter-spacing:-.04em}.hero h1 em{font-style:normal;color:var(--muted)}.gradient-text{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}.hero-lead{font-size:16px;line-height:2;color:var(--muted);max-width:650px}.hero-actions{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}.hero-meta{display:flex;gap:17px;flex-wrap:wrap;margin-top:28px;color:var(--muted);font-size:10px}.hero-meta span{display:flex;align-items:center;gap:6px}.hero-meta i{width:5px;height:5px;background:var(--accent2);border-radius:50%}.hero-visual{min-height:570px;display:grid;place-items:center;position:relative}.profile-card{width:min(410px,100%);aspect-ratio:.78;position:relative;overflow:visible;padding:16px;transform:perspective(1300px) rotateX(var(--rx,0)) rotateY(var(--ry,0));transition:transform .2s ease,box-shadow .3s}.glass-card{background:var(--panel);border:1px solid var(--line);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:var(--shadow);border-radius:var(--radius)}.card-glow{position:absolute;inset:-30%;background:radial-gradient(circle,var(--accent-soft),transparent 52%);z-index:-1;filter:blur(35px)}.profile-media{height:74%;border-radius:22px;overflow:hidden;background:linear-gradient(145deg,#11182c,#090d17);border:1px solid rgba(255,255,255,.07);display:grid;place-items:center}.profile-media img{width:100%;height:100%;object-fit:cover}.profile-placeholder{text-align:center;color:var(--muted)}.monogram{display:block;font-size:92px;line-height:1;font-weight:900;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;color:transparent}.profile-placeholder small{line-height:1.8;font-size:10px}.profile-placeholder b{color:var(--text)}.profile-info{display:flex;justify-content:space-between;padding:17px 5px 3px}.profile-info div{display:grid;gap:5px}.profile-info strong{font-size:13px}.mini-label{font-size:9px;color:var(--muted)}.floating-badge{position:absolute;border:1px solid var(--line);background:rgba(9,13,24,.78);backdrop-filter:blur(14px);padding:10px 11px;border-radius:15px;font-weight:900;font-size:14px;box-shadow:0 15px 35px rgba(0,0,0,.2);animation:float 6s ease-in-out infinite}.floating-badge span{font-size:9px;font-weight:500;color:var(--muted);margin-inline-start:4px}.badge-one{left:-22px;top:20%}.badge-two{right:-20px;bottom:17%;animation-delay:-2s}.visual-orbit{position:absolute;border:1px solid rgba(255,255,255,.07);border-radius:50%;width:78%;aspect-ratio:1;animation:spin 22s linear infinite}.orbit-b{width:95%;animation-direction:reverse;border-color:rgba(139,92,246,.15)}.scroll-cue{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);display:grid;gap:8px;justify-items:center;color:var(--muted);font-size:9px}.scroll-cue span{width:1px;height:52px;background:linear-gradient(var(--accent),transparent);animation:scrollLine 1.8s infinite}
+.section-kicker{display:block;text-transform:none;margin-bottom:10px}.section h2{font-size:clamp(30px,4vw,52px);line-height:1.2;margin:0;font-weight:900;letter-spacing:-.03em}.section-top{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:48px}.section-top p,.section-heading p{max-width:520px;color:var(--muted);font-size:13px;line-height:1.9;margin:0}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:90px}.about-copy{color:var(--muted);line-height:2;font-size:14px}.fact-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:32px}.fact{border-top:1px solid var(--line);padding-top:16px}.fact span{display:block;color:var(--muted);font-size:10px;margin-bottom:8px}.fact strong{font-size:14px;color:var(--text)}
+.activity-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.activity-card{grid-column:span 4;min-height:390px;padding:24px;position:relative;overflow:hidden;border:1px solid var(--line);border-radius:24px;background:linear-gradient(160deg,rgba(255,255,255,.065),rgba(255,255,255,.025));transform:perspective(1200px) rotateX(var(--rx,0)) rotateY(var(--ry,0));transition:transform .2s ease,background .3s,border-color .3s}.activity-card.feature{grid-column:span 6;min-height:430px;background:linear-gradient(145deg,var(--accent-soft),rgba(255,255,255,.03))}.activity-card:hover{border-color:rgba(255,255,255,.18);background:linear-gradient(160deg,rgba(255,255,255,.095),rgba(255,255,255,.03))}.card-index{font-size:10px;color:var(--muted);position:absolute;top:20px;left:20px}.activity-icon{width:50px;height:50px;border-radius:16px;display:grid;place-items:center;font-size:22px;background:rgba(255,255,255,.06);border:1px solid var(--line)}.activity-content{position:relative;z-index:2;margin-top:75px;max-width:510px}.activity-tag{font-size:10px;color:var(--accent2)}.activity-content h3{font-size:25px;margin:10px 0}.activity-content p{font-size:13px;line-height:2;color:var(--muted);max-width:520px}.text-link,.text-button{background:none;border:0;padding:0;color:var(--text);font-size:11px;font-weight:800}.activity-art{position:absolute;right:-20px;bottom:-20px;width:240px;height:150px;opacity:.32}.art-goni span{position:absolute;bottom:20px;width:70px;height:80px;border:1px solid rgba(255,255,255,.3);transform:skewY(-15deg) rotate(10deg);border-radius:8px}.art-goni span:nth-child(1){right:20px}.art-goni span:nth-child(2){right:80px;bottom:7px}.art-goni span:nth-child(3){right:140px;bottom:27px}
+.timeline{position:relative;max-width:920px;margin:15px auto 0}.timeline-line{position:absolute;right:50%;width:1px;top:0;bottom:0;background:linear-gradient(var(--accent),rgba(255,255,255,.06));transform:translateX(50%)}.timeline-line span{position:sticky;top:42%;display:block;height:120px;background:linear-gradient(transparent,var(--accent2),transparent);filter:blur(1px)}.timeline-item{position:relative;display:grid;grid-template-columns:1fr 80px 1fr;align-items:center;min-height:210px}.timeline-item:nth-child(odd) .timeline-card{grid-column:1}.timeline-item:nth-child(even) .timeline-card{grid-column:3}.timeline-card{padding:22px;position:relative}.timeline-card small{color:var(--accent2);font-size:10px}.timeline-card h3{font-size:20px;margin:8px 0}.timeline-card p{color:var(--muted);font-size:12px;line-height:1.9;margin:0}.timeline-year{text-align:center;color:var(--muted);font-size:10px;grid-column:2}.timeline-dot{position:absolute;right:50%;transform:translate(50%,-50%);top:50%;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--accent);box-shadow:0 0 0 7px rgba(139,92,246,.08),0 0 25px var(--accent)}
+.skill-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:18px}.skills-panel{padding:28px}.skill-item{padding:18px 0;border-bottom:1px solid var(--line)}.skill-item:last-child{border-bottom:0}.skill-item>div:first-child{display:flex;justify-content:space-between;gap:15px;font-size:12px}.skill-item strong{font-size:10px;color:var(--muted);font-weight:500}.skill-bar{height:6px;background:rgba(255,255,255,.06);border-radius:99px;overflow:hidden;margin-top:13px}.skill-bar span{display:block;height:100%;width:var(--w);background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:inherit}.interest-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.mini-card{padding:24px;border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.025);transition:.3s}.mini-card:hover{transform:translateY(-5px);background:rgba(255,255,255,.05)}.mini-card span{font-size:10px;color:var(--accent2)}.mini-card b{display:block;font-size:18px;margin:30px 0 8px}.mini-card p{font-size:11px;line-height:1.9;color:var(--muted);margin:0}
+.gallery-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-auto-rows:250px;gap:15px}.gallery-card{border:1px solid var(--line);padding:0;background:none;border-radius:24px;overflow:hidden;position:relative;transition:.35s}.gallery-card.large{grid-row:span 2}.gallery-card:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.2)}.gallery-placeholder{height:100%;padding:20px;text-align:right;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}.gallery-placeholder:before,.blog-cover:before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.18),transparent 28%),linear-gradient(145deg,rgba(255,255,255,.04),transparent)}.placeholder-bird{background:linear-gradient(145deg,#18284e,#0a1724)}.placeholder-bag{background:linear-gradient(145deg,#4b2410,#181019)}.placeholder-work{background:linear-gradient(145deg,#14372f,#0f1b2a)}.placeholder-life{background:linear-gradient(145deg,#3c1e43,#0e1324)}.gallery-placeholder span{font-size:11px;color:rgba(255,255,255,.65);position:relative}.gallery-placeholder strong{font-size:24px;margin-top:5px;position:relative}.gallery-placeholder small{font-size:10px;color:rgba(255,255,255,.7);position:relative}
+.music-layout{display:grid;grid-template-columns:.75fr 1.25fr;align-items:start;gap:55px}.player-shell{padding:28px}.player-top{display:flex;justify-content:space-between;gap:15px;align-items:start}.player-top small{color:var(--muted);font-size:9px}.player-top h3{margin:7px 0 2px;font-size:21px}.player-top span{font-size:10px;color:var(--muted)}.equalizer{display:flex;align-items:end;gap:4px;height:35px}.equalizer i{display:block;width:4px;height:12px;border-radius:4px;background:linear-gradient(var(--accent),var(--accent2))}.equalizer i:nth-child(2){height:23px}.equalizer i:nth-child(3){height:15px}.equalizer i:nth-child(4){height:27px}.equalizer.playing i{animation:eq .8s ease-in-out infinite alternate}.equalizer.playing i:nth-child(2){animation-delay:-.3s}.equalizer.playing i:nth-child(3){animation-delay:-.15s}.equalizer.playing i:nth-child(4){animation-delay:-.5s}.player-time{display:grid;grid-template-columns:40px 1fr 40px;gap:9px;align-items:center;margin:26px 0 20px;font-size:9px;color:var(--muted)}.progress-track{position:relative}.progress-track input{width:100%;appearance:none;background:rgba(255,255,255,.08);height:5px;border-radius:99px;outline:none;position:relative;z-index:2}.progress-track input::-webkit-slider-thumb{appearance:none;width:14px;height:14px;border-radius:50%;background:white;box-shadow:0 0 0 6px rgba(255,255,255,.08)}.seek-fill{position:absolute;inset-inline-start:0;top:0;height:5px;width:0;border-radius:99px;background:linear-gradient(90deg,var(--accent),var(--accent2));pointer-events:none}.player-controls{display:flex;justify-content:center;gap:12px;margin-bottom:20px}.player-btn{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--text);font-size:16px}.player-btn.play{width:56px;height:56px;border:0;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 18px 30px var(--accent-soft)}.playlist{display:grid;gap:8px}.playlist-item{border:1px solid transparent;background:rgba(255,255,255,.025);color:var(--text);padding:11px;border-radius:15px;display:grid;grid-template-columns:34px 1fr 22px;gap:10px;align-items:center;text-align:right}.playlist-item:hover,.playlist-item.active{border-color:var(--line);background:rgba(255,255,255,.07)}.track-num{color:var(--muted);font-size:10px;text-align:center}.playlist-item b{font-size:11px;display:block}.playlist-item small{font-size:9px;color:var(--muted)}.track-state{font-size:9px;color:var(--accent2)}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.blog-card{overflow:hidden;border:1px solid var(--line);border-radius:23px;background:rgba(255,255,255,.03);transform:perspective(1200px) rotateX(var(--rx,0)) rotateY(var(--ry,0));transition:.2s}.blog-cover{height:190px;position:relative;display:flex;align-items:end;padding:20px;overflow:hidden}.cover-goni{background:linear-gradient(145deg,#4f2a12,#121523)}.cover-bird{background:linear-gradient(145deg,#153b4a,#11152a)}.cover-work{background:linear-gradient(145deg,#243c24,#11182a)}.blog-cover span{position:relative;font-size:12px;padding:7px 9px;border:1px solid rgba(255,255,255,.2);border-radius:10px;background:rgba(0,0,0,.15)}.blog-body{padding:22px}.blog-body small{font-size:9px;color:var(--accent2)}.blog-body h3{font-size:18px;line-height:1.5;margin:8px 0}.blog-body p{color:var(--muted);font-size:11px;line-height:1.9;margin:0 0 18px}
+.contact-section{padding-bottom:90px}.contact-grid{display:grid;grid-template-columns:1fr .9fr;gap:60px;align-items:start}.contact-copy h2{font-size:clamp(32px,4.7vw,57px);margin:8px 0 20px}.contact-copy>p{color:var(--muted);line-height:2;font-size:13px;max-width:600px}.contact-actions{display:grid;gap:10px;margin:28px 0}.contact-line{display:flex;align-items:center;gap:13px;padding:13px;border-bottom:1px solid var(--line)}.line-icon{width:37px;height:37px;border:1px solid var(--line);border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.035)}.contact-line span:last-child{display:grid;gap:3px}.contact-line small{font-size:9px;color:var(--muted)}.contact-line b{font-size:12px}.resume-btn{margin-top:3px}.contact-form{padding:24px;display:grid;gap:15px}.form-head{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:4px}.form-head span{font-weight:800;font-size:13px}.form-head small{font-size:8px;color:var(--muted)}label{font-size:10px;color:var(--muted);display:grid;gap:7px}input,textarea{border:1px solid var(--line);background:rgba(255,255,255,.035);color:var(--text);border-radius:14px;padding:13px 14px;outline:0;transition:.2s}textarea{resize:vertical;min-height:130px}input:focus,textarea:focus{border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+.footer{border-top:1px solid var(--line);padding:24px 0;background:rgba(0,0,0,.12)}.footer-inner{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:10px}.footer-inner div{display:grid;gap:5px}.footer-inner strong{color:var(--text);font-size:12px}.footer-inner a{color:var(--text)}
+.theme-drawer,.mobile-sheet,.lightbox,.post-modal{position:fixed;inset:0;z-index:100;pointer-events:none}.theme-drawer.open,.mobile-sheet.open,.lightbox.open,.post-modal.open{pointer-events:auto}.drawer-backdrop,.lightbox-backdrop{position:absolute;inset:0;background:rgba(2,4,10,.62);backdrop-filter:blur(8px);opacity:0;transition:.3s}.theme-drawer.open .drawer-backdrop,.mobile-sheet.open .drawer-backdrop,.lightbox.open .lightbox-backdrop,.post-modal.open .lightbox-backdrop{opacity:1}.drawer-panel{position:absolute;top:0;right:0;height:100%;width:min(390px,92vw);background:#0b101d;border-inline-start:1px solid var(--line);padding:26px;transform:translateX(100%);transition:.45s var(--ease);overflow:auto}.theme-drawer.open .drawer-panel{transform:none}.drawer-head{display:flex;justify-content:space-between;gap:15px;align-items:start;margin-bottom:25px}.drawer-head h3{margin:3px 0 0;font-size:23px}.drawer-section{padding:18px 0;border-top:1px solid var(--line)}.drawer-label{font-size:10px;color:var(--muted);display:block;margin-bottom:11px}.option-grid{display:grid;gap:8px}.option-grid.two{grid-template-columns:1fr 1fr}.option-btn{border:1px solid var(--line);color:var(--text);background:rgba(255,255,255,.03);padding:11px;border-radius:12px;font-size:11px;transition:.2s}.option-btn:hover,.option-btn.selected{background:var(--accent-soft);border-color:var(--accent);color:var(--text)}.swatches{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.swatch{width:100%;aspect-ratio:1;border-radius:12px;border:2px solid transparent}.swatch.selected{border-color:white;box-shadow:0 0 0 2px var(--accent)}.swatch.violet{background:linear-gradient(135deg,#8b5cf6,#22d3ee)}.swatch.cyan{background:linear-gradient(135deg,#06b6d4,#3b82f6)}.swatch.orange{background:linear-gradient(135deg,#f97316,#ef4444)}.swatch.green{background:linear-gradient(135deg,#10b981,#84cc16)}.swatch.rose{background:linear-gradient(135deg,#f43f5e,#ec4899)}.swatch.yellow{background:linear-gradient(135deg,#f59e0b,#eab308)}
+.mobile-panel{position:absolute;bottom:0;left:0;right:0;background:#0b101d;border-top:1px solid var(--line);border-radius:28px 28px 0 0;padding:22px 20px 25px;transform:translateY(100%);transition:.4s var(--ease)}.mobile-sheet.open .mobile-panel{transform:none}.mobile-nav{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:20px 0}.mobile-nav a{padding:14px;border:1px solid var(--line);border-radius:14px;font-size:12px;background:rgba(255,255,255,.03)}.lightbox-card{position:absolute;inset:8% 7%;padding:16px;border:1px solid var(--line);border-radius:25px;background:#0b101d;transform:translateY(30px) scale(.97);opacity:0;transition:.35s var(--ease);display:grid;grid-template-rows:1fr auto;overflow:hidden}.lightbox.open .lightbox-card{transform:none;opacity:1}.lightbox-card>.icon-button{position:absolute;top:12px;left:12px;z-index:2}.lightbox-media{display:grid;place-items:center;border-radius:17px;overflow:hidden;background:#060914}.lightbox-media img{width:100%;height:100%;object-fit:contain}.lightbox-placeholder{display:grid;place-items:center;gap:10px;color:var(--muted);font-size:11px}.lightbox-placeholder code{font-size:9px;color:var(--accent2)}.lightbox-caption{padding:15px 5px 4px;font-size:12px}.post-sheet{position:absolute;top:7%;bottom:7%;left:50%;transform:translate(-50%,30px);opacity:0;width:min(780px,92vw);background:#0b101d;border:1px solid var(--line);border-radius:25px;padding:32px;overflow:auto;transition:.35s var(--ease)}.post-modal.open .post-sheet{transform:translate(-50%,0);opacity:1}.post-sheet>.icon-button{position:absolute;top:14px;left:14px}.post-sheet h2{font-size:32px;max-width:650px;line-height:1.4}.post-sheet #post-body{color:var(--muted);line-height:2;font-size:14px}.toast{position:fixed;bottom:26px;left:50%;transform:translate(-50%,20px);opacity:0;background:#111827;color:#fff;padding:12px 15px;border:1px solid var(--line);border-radius:13px;font-size:10px;z-index:160;transition:.25s}.toast.show{transform:translate(-50%,0);opacity:1}
+body.mode-light{--bg:#f4f7fb;--bg2:#e9eef6;--panel:rgba(255,255,255,.72);--panel-strong:#fff;--text:#121827;--muted:#667085;--line:rgba(18,24,39,.1);--shadow:0 30px 90px rgba(41,51,75,.12)}body.mode-light .site-header .nav-shell{background:rgba(255,255,255,.72)}body.mode-light .dark-section{background:linear-gradient(180deg,rgba(255,255,255,.75),rgba(231,237,247,.55))}body.mode-light .drawer-panel,body.mode-light .mobile-panel,body.mode-light .lightbox-card,body.mode-light .post-sheet{background:#fff}.theme-classic{--radius:8px}.theme-classic .btn,.theme-classic .icon-button,.theme-classic .activity-card,.theme-classic .blog-card,.theme-classic .gallery-card,.theme-classic .contact-form,.theme-classic .profile-card{border-radius:10px}.theme-classic .brand-mark{border-radius:8px}.theme-classic .hero h1{letter-spacing:-.02em;font-family:Georgia,'Times New Roman',serif}.theme-glass .nav-shell,.theme-glass .activity-card,.theme-glass .blog-card,.theme-glass .gallery-card,.theme-glass .contact-form,.theme-glass .profile-card,.theme-glass .skills-panel,.theme-glass .timeline-card,.theme-glass .mini-card,.theme-glass .player-shell{background:rgba(255,255,255,.055);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);box-shadow:0 35px 100px rgba(0,0,0,.25),inset 0 1px rgba(255,255,255,.1)}.theme-minimal{--line:rgba(255,255,255,.14);--panel:rgba(255,255,255,.025)}.theme-minimal .site-noise,.theme-minimal .ambient{opacity:.0}.theme-minimal .nav-shell{backdrop-filter:none;background:transparent;box-shadow:none}.theme-minimal .activity-card,.theme-minimal .blog-card,.theme-minimal .gallery-card,.theme-minimal .contact-form,.theme-minimal .profile-card,.theme-minimal .skills-panel,.theme-minimal .timeline-card,.theme-minimal .mini-card,.theme-minimal .player-shell{background:transparent;box-shadow:none}.theme-gradient{--panel:rgba(255,255,255,.07)}.theme-gradient .hero{background:radial-gradient(circle at 80% 30%,var(--accent-soft),transparent 26%)}.theme-gradient .activity-card.feature{background:linear-gradient(135deg,var(--accent-soft),rgba(34,211,238,.1),rgba(255,255,255,.03))}.surface-solid .glass-card,.surface-solid .nav-shell,.surface-solid .activity-card,.surface-solid .blog-card,.surface-solid .gallery-card,.surface-solid .skills-panel,.surface-solid .mini-card,.surface-solid .player-shell,.surface-solid .contact-form{backdrop-filter:none;-webkit-backdrop-filter:none;background:var(--panel-strong);box-shadow:0 28px 70px rgba(0,0,0,.16)}
+[data-tilt]{will-change:transform}.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}.reveal.visible{opacity:1;transform:translateY(0)}.reveal-delay{transition-delay:.15s}@keyframes pulse{50%{box-shadow:0 0 0 10px rgba(52,211,153,0)}}@keyframes float{50%{transform:translateY(-9px)}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes scrollLine{50%{opacity:.25;transform:translateY(10px)}}@keyframes eq{to{transform:scaleY(.25)}}
+@media (max-width:980px){.desktop-nav{gap:0}.nav-link{padding-inline:7px}.nav-cta{display:none}.hero-grid,.music-layout,.contact-grid,.skill-layout,.about-grid{grid-template-columns:1fr}.hero{padding-top:135px}.hero-visual{min-height:480px;order:-1}.hero-copy{text-align:center}.hero-actions,.hero-meta{justify-content:center}.hero-lead{margin-inline:auto}.section-top{align-items:start;flex-direction:column}.activity-card.feature{grid-column:span 12}.activity-card:not(.feature){grid-column:span 6}.gallery-grid{grid-template-columns:1fr 1fr}.gallery-card.large{grid-column:span 2}.timeline-item{grid-template-columns:1fr 60px 1fr}.contact-grid{gap:35px}.skill-layout{gap:25px}}
+@media (max-width:720px){.container{width:min(100% - 24px,640px)}.section{padding:88px 0}.site-header{padding-top:9px}.nav-shell{height:62px;border-radius:18px;padding-inline:9px 9px}.brand-mark{width:38px;height:38px;border-radius:12px}.brand-copy small{display:none}.desktop-nav{display:none}.menu-toggle{display:grid}.hero{padding-top:115px;min-height:auto}.hero h1{font-size:45px}.hero-lead{font-size:13px}.hero-visual{min-height:400px}.profile-card{width:min(360px,92%)}.badge-one{left:-8px}.badge-two{right:-8px}.fact-row{grid-template-columns:1fr}.activity-card,.activity-card.feature{grid-column:span 12;min-height:330px}.about-grid{gap:28px}.section h2{font-size:32px}.timeline-line{right:24px;transform:none}.timeline-item,.timeline-item:nth-child(even),.timeline-item:nth-child(odd){display:grid;grid-template-columns:45px 1fr;min-height:180px}.timeline-dot{right:24px;transform:translate(50%,-50%)}.timeline-year{grid-column:1;text-align:right;writing-mode:vertical-rl}.timeline-card,.timeline-item:nth-child(odd) .timeline-card,.timeline-item:nth-child(even) .timeline-card{grid-column:2}.interest-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:190px}.gallery-card.large{grid-column:span 2}.music-layout{gap:30px}.player-shell{padding:18px}.blog-grid{grid-template-columns:1fr}.contact-copy h2{font-size:37px}.footer-inner{align-items:start;gap:20px}.theme-drawer .drawer-panel{width:min(365px,95vw)}.lightbox-card{inset:9% 3%}.post-sheet{top:5%;bottom:5%;padding:23px;width:94vw}.post-sheet h2{font-size:24px}.nav-shell .icon-button{width:38px;height:38px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.pulse-dot,.floating-badge,.visual-orbit,.scroll-cue span,.equalizer.playing i{animation:none}.activity-card,.blog-card,.profile-card{transform:none!important}}
+/* Strongly differentiated visual modes */
+.theme-classic{--radius:11px;--panel:rgba(20,25,38,.78);--line:rgba(210,180,110,.18)}
+.theme-classic body{}
+.theme-classic .site-header .nav-shell{border-radius:12px;background:rgba(18,22,32,.88);border-color:rgba(210,180,110,.2);box-shadow:0 14px 36px rgba(0,0,0,.24)}
+.theme-classic .brand-mark{background:#b9975b;color:#17120a;box-shadow:none}.theme-classic .btn-primary{background:#b9975b;color:#17120a;box-shadow:0 10px 25px rgba(185,151,91,.18)}
+.theme-classic .gradient-text{background:linear-gradient(135deg,#c9ad70,#8d6a32);-webkit-background-clip:text;color:transparent}.theme-classic .hero h1{font-family:Georgia,'Times New Roman',serif;letter-spacing:0;font-weight:700}.theme-classic .activity-card,.theme-classic .blog-card,.theme-classic .gallery-card,.theme-classic .contact-form,.theme-classic .profile-card,.theme-classic .skills-panel,.theme-classic .timeline-card,.theme-classic .mini-card,.theme-classic .player-shell{background:var(--panel);box-shadow:0 18px 50px rgba(0,0,0,.18)}.theme-classic .activity-card:hover,.theme-classic .blog-card:hover{transform:translateY(-4px)!important}.theme-classic .section-kicker,.theme-classic .activity-tag{color:#c9ad70}.theme-classic .ambient{opacity:.13}.theme-classic .site-noise{opacity:.01}
+.theme-glass .profile-card,.theme-glass .activity-card,.theme-glass .blog-card,.theme-glass .gallery-card,.theme-glass .skills-panel,.theme-glass .timeline-card,.theme-glass .mini-card,.theme-glass .player-shell,.theme-glass .contact-form,.theme-glass .nav-shell{background:linear-gradient(135deg,rgba(255,255,255,.13),rgba(255,255,255,.035));border-color:rgba(255,255,255,.18);backdrop-filter:blur(30px) saturate(145%);-webkit-backdrop-filter:blur(30px) saturate(145%);box-shadow:inset 0 1px rgba(255,255,255,.2),0 35px 90px rgba(0,0,0,.23)}.theme-glass .ambient{opacity:.55}.theme-glass .activity-card:hover,.theme-glass .blog-card:hover{box-shadow:inset 0 1px rgba(255,255,255,.25),0 38px 100px rgba(0,0,0,.3)}
+.theme-minimal .hero h1{font-weight:700}.theme-minimal .section h2{font-weight:750}.theme-minimal .activity-icon{background:transparent}.theme-minimal .btn-primary{box-shadow:none}.theme-minimal .profile-card{border-color:var(--line)}.theme-minimal .activity-card:hover,.theme-minimal .blog-card:hover,.theme-minimal .gallery-card:hover{transform:translateY(-3px)!important}
+.theme-gradient{--panel:rgba(255,255,255,.055)}.theme-gradient body{background:linear-gradient(145deg,#140e22 0%,#071722 47%,#161007 100%)}.theme-gradient .ambient{opacity:.72;filter:blur(90px)}.theme-gradient .hero:before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 25% 25%,var(--accent-soft),transparent 22%),radial-gradient(circle at 72% 30%,rgba(34,211,238,.12),transparent 22%),linear-gradient(120deg,transparent 0 30%,rgba(255,255,255,.03) 50%,transparent 70%)}.theme-gradient .nav-shell,.theme-gradient .activity-card,.theme-gradient .blog-card,.theme-gradient .gallery-card,.theme-gradient .contact-form,.theme-gradient .profile-card,.theme-gradient .skills-panel,.theme-gradient .timeline-card,.theme-gradient .mini-card,.theme-gradient .player-shell{border-color:rgba(255,255,255,.13);background:linear-gradient(135deg,rgba(255,255,255,.09),rgba(255,255,255,.025))}.theme-gradient .section-kicker{color:var(--accent2)}
+
+
+
+
+
+
+
+
+
+
+
+
+JS
+(function(){const d=document,body=d.body,root=d.documentElement,key='mehdi-site-preferences-v3',defaults={mode:'dark',theme:'modern',accent:'violet',surface:'glass'};let prefs=(()=>{try{return {...defaults,...JSON.parse(localStorage.getItem(key)||'{}')}}catch{return {...defaults}}})();
+function apply(){body.className=`theme-${prefs.theme} surface-${prefs.surface} mode-${prefs.mode}`;const accents={violet:['#8b5cf6','#22d3ee'],cyan:['#06b6d4','#3b82f6'],orange:['#f97316','#ef4444'],green:['#10b981','#84cc16'],rose:['#f43f5e','#ec4899'],yellow:['#f59e0b','#eab308']};const pair=accents[prefs.accent]||accents.violet;root.style.setProperty('--accent',pair[0]);root.style.setProperty('--accent2',pair[1]);d.querySelectorAll('.option-btn').forEach(b=>b.classList.toggle('selected',(b.dataset.mode===prefs.mode)||(b.dataset.theme===prefs.theme)||(b.dataset.surface===prefs.surface)));d.querySelectorAll('.swatch').forEach(b=>b.classList.toggle('selected',b.dataset.accent===prefs.accent));d.querySelector('meta[name="theme-color"]').content=prefs.mode==='dark'?'#0b1020':'#f4f7fb'}
+function save(){localStorage.setItem(key,JSON.stringify(prefs));try{new BroadcastChannel('mehdi-theme-v3').postMessage(prefs)}catch{}}apply();
+try{const ch=new BroadcastChannel('mehdi-theme-v3');ch.onmessage=e=>{prefs={...defaults,...e.data};apply()}}catch{};addEventListener('storage',e=>{if(e.key===key){try{prefs={...defaults,...JSON.parse(e.newValue||'{}')}}catch{}apply()}});
+d.querySelectorAll('[data-mode]').forEach(x=>x.onclick=()=>{prefs.mode=x.dataset.mode;apply();save()});d.querySelectorAll('[data-theme]').forEach(x=>x.onclick=()=>{prefs.theme=x.dataset.theme;apply();save()});d.querySelectorAll('[data-surface]').forEach(x=>x.onclick=()=>{prefs.surface=x.dataset.surface;apply();save()});d.querySelectorAll('[data-accent]').forEach(x=>x.onclick=()=>{prefs.accent=x.dataset.accent;apply();save()});d.getElementById('reset-theme').onclick=()=>{prefs={...defaults};apply();save()};
+const theme=d.getElementById('theme-drawer'),mobile=d.getElementById('mobile-sheet');function open(el){el.classList.add('open');el.setAttribute('aria-hidden','false');body.classList.add('no-scroll')}function close(el){el.classList.remove('open');el.setAttribute('aria-hidden','true');body.classList.remove('no-scroll')}
+d.getElementById('theme-open').onclick=()=>open(theme);d.querySelectorAll('[data-close-theme]').forEach(x=>x.onclick=()=>close(theme));d.getElementById('mobile-open').onclick=()=>open(mobile);d.querySelectorAll('[data-close-mobile]').forEach(x=>x.onclick=()=>close(mobile));d.querySelectorAll('.mobile-nav a,.mobile-panel .btn').forEach(x=>x.onclick=()=>close(mobile));d.addEventListener('keydown',e=>{if(e.key==='Escape'){[theme,mobile,d.getElementById('lightbox'),d.getElementById('post-modal')].forEach(close)}});
+const prog=d.getElementById('scroll-progress'),hdr=d.querySelector('.site-header');addEventListener('scroll',()=>{const m=d.documentElement.scrollHeight-innerHeight;prog.style.width=`${m?scrollY/m*100:0}%`;hdr.classList.toggle('scrolled',scrollY>30)},{passive:true});
+const obs=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('visible')),{threshold:.12});d.querySelectorAll('.reveal').forEach(x=>obs.observe(x));const links=[...d.querySelectorAll('.nav-link')];const secs=links.map(a=>d.querySelector(a.hash)).filter(Boolean);const spy=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&links.forEach(a=>a.classList.toggle('active',a.hash===`#${e.target.id}`))),{rootMargin:'-35% 0px -55% 0px'});secs.forEach(s=>spy.observe(s));
+const p=d.getElementById('profile-media');const img=new Image();img.src=MEHDI_SITE.profileImage;img.onload=()=>{p.innerHTML='';p.append(img);p.classList.add('has-image')};
+d.querySelectorAll('[data-tilt]').forEach(c=>{c.onpointermove=e=>{if(!matchMedia('(pointer:fine)').matches)return;const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.setProperty('--rx',`${-y*6}deg`);c.style.setProperty('--ry',`${x*7}deg`)};c.onpointerleave=()=>{c.style.setProperty('--rx','0deg');c.style.setProperty('--ry','0deg')}});
+const audio=d.getElementById('audio'),list=d.getElementById('playlist'),tracks=MEHDI_SITE.playlist||[];let current=0;const title=d.getElementById('track-title'),artist=d.getElementById('track-artist'),play=d.getElementById('play-track'),seek=d.getElementById('seek'),fill=d.getElementById('seek-fill'),cur=d.getElementById('current-time'),dur=d.getElementById('duration'),eq=d.getElementById('equalizer');const time=s=>{if(!Number.isFinite(s))return'00:00';return`${Math.floor(s/60).toString().padStart(2,'0')}:${Math.floor(s%60).toString().padStart(2,'0')}`};const esc=s=>String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));function render(){list.innerHTML=tracks.map((t,i)=>`<button type="button" class="playlist-item ${i===current?'active':''}" data-track="${i}"><span class="track-num">${String(i+1).padStart(2,'0')}</span><span><b>${esc(t.title)}</b><small>${esc(t.artist)}</small></span><span class="track-state">${i===current?'●':'▶'}</span></button>`).join('');list.querySelectorAll('[data-track]').forEach(b=>b.onclick=()=>load(+b.dataset.track,true))}function load(i,auto=false){if(!tracks.length)return;current=(i+tracks.length)%tracks.length;const t=tracks[current];title.textContent=t.title;artist.textContent=t.artist;audio.src=t.src;audio.load();render();if(auto)audio.play().catch(()=>toast('فایل موسیقی را داخل assets/music قرار بده.'))}function update(){play.textContent=audio.paused?'▶':'Ⅱ';eq.classList.toggle('playing',!audio.paused);const v=audio.duration?(audio.currentTime/audio.duration)*100:0;seek.value=v;fill.style.width=v+'%';cur.textContent=time(audio.currentTime);dur.textContent=time(audio.duration)}play.onclick=()=>{if(!audio.src)load(0);audio.paused?audio.play().catch(()=>toast('فایل موسیقی را داخل assets/music قرار بده.')):audio.pause()};d.getElementById('prev-track').onclick=()=>load(current-1,!audio.paused);d.getElementById('next-track').onclick=()=>load(current+1,!audio.paused);seek.oninput=()=>{if(audio.duration)audio.currentTime=seek.value/100*audio.duration;update()};['timeupdate','loadedmetadata','play','pause'].forEach(ev=>audio.addEventListener(ev,update));audio.onended=()=>load(current+1,true);load(0);update();
+const light=d.getElementById('lightbox'),lm=d.getElementById('lightbox-media'),lc=d.getElementById('lightbox-caption');d.querySelectorAll('.gallery-trigger').forEach(b=>b.onclick=()=>{lc.textContent=b.dataset.caption;lm.innerHTML='<div class="lightbox-placeholder"><small>عکس واقعی را اضافه کن</small><code>'+b.dataset.image+'</code></div>';const im=new Image();im.src=b.dataset.image;im.onload=()=>{lm.innerHTML='';lm.append(im)};open(light)});d.querySelectorAll('[data-close-lightbox]').forEach(x=>x.onclick=()=>close(light));
+const posts={'post-goni':{title:'شروع خرید و فروش عمده گونی مواد غذایی',body:'<p>این فعالیت برای من از یک ایده ساده برای ساختن منبع درآمد شخصی شروع شد. تمرکز اصلی روی خرید و فروش گونی‌های مورد استفاده برای مواد غذایی به صورت انبوه است.</p><p>در این مسیر، شناخت جنس، قیمت، نیاز مشتری و مهم‌تر از همه اعتماد در معامله اهمیت دارد. هدف، رشد تدریجی و منظم این فعالیت است.</p>'},'post-bird':{title:'چرا پرورش مرغ عشق برای من جذاب است؟',body:'<p>مرغ عشق برای من ترکیبی از علاقه و فرصت کسب‌وکار است. پرورش و فروش در رنگ‌ها و نژادهای مختلف، فضایی برای یادگیری مداوم و ساختن یک فعالیت قابل توسعه ایجاد می‌کند.</p><p>در آینده دوست دارم این بخش را جدی‌تر کنم و اطلاعات، گالری و مسیر فروش آن را به یک بخش تخصصی تبدیل کنم.</p>'},'post-work':{title:'دو سال کار در یک محیط واقعی صنعتی',body:'<p>دو سال کار به عنوان کارگر ساده در شرکتی واقع در شهرک شکوهیه قم، تجربه‌ای کاملاً عملی برای من بوده است. محیط واقعی کار چیزهایی را یاد می‌دهد که صرفاً از پشت میز نمی‌توان یاد گرفت.</p><p>موضوع فعالیت شرکت روغن‌گیری کنجد است و در بعضی مواقع کار با ذرت و بادم هم انجام می‌شود.</p>'}};const pm=d.getElementById('post-modal');d.querySelectorAll('.post-open').forEach(b=>b.onclick=()=>{const p=posts[b.dataset.post];d.getElementById('post-title').textContent=p.title;d.getElementById('post-body').innerHTML=p.body;open(pm)});d.querySelectorAll('[data-close-post]').forEach(x=>x.onclick=()=>close(pm));
+d.getElementById('contact-form').onsubmit=e=>{e.preventDefault();const f=new FormData(e.currentTarget),subject=encodeURIComponent(`پیام از سایت مهدی عبادی - ${f.get('name')||'مهمان'}`),bodyText=encodeURIComponent(`نام: ${f.get('name')||'-'}\nایمیل: ${f.get('email')||'-'}\n\n${f.get('message')||''}`);location.href=`mailto:${MEHDI_SITE.email}?subject=${subject}&body=${bodyText}`};function toast(t){const x=d.createElement('div');x.className='toast';x.textContent=t;d.body.append(x);setTimeout(()=>x.classList.add('show'),20);setTimeout(()=>{x.classList.remove('show');setTimeout(()=>x.remove(),300)},2600)}
+})();
+
+
+
+
+
+
+
+
+window.MEHDI_SITE = { email:'mahdiebadiasil@gmail.com', phone:'+989357978773', socials:{instagram:'',telegram:'',rubika:'',eitaa:'',bale:''}, profileImage:'assets/images/profile.webp', playlist:[{title:'آهنگ مورد علاقه ۱',artist:'نام خواننده',src:'assets/music/track-01.mp3'},{title:'آهنگ مورد علاقه ۲',artist:'نام خواننده',src:'assets/music/track-02.mp3'},{title:'آهنگ مورد علاقه ۳',artist:'نام خواننده',src:'assets/music/track-03.mp3'},{title:'آهنگ مورد علاقه ۴',artist:'نام خواننده',src:'assets/music/track-04.mp3'}] };
